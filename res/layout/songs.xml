@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:weightSum="1">
+	<ListView 
+		android:id="@+id/android:list"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:drawSelectorOnTop="false">
+	</ListView>
+	
+	<TextView 
+		android:id="@+id/android:empty"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:text="No songs found.">
+	</TextView>
+    
+    <LinearLayout 
+    	android:layout_weight="0.21" 
+    	android:orientation="horizontal" 
+    	android:id="@+id/playLayout" 
+    	android:layout_height="100px" 
+    	android:layout_width="fill_parent">
+    	
+        <Button 
+        	android:layout_height="100px"
+        	android:onClick="songBack" 
+        	android:id="@+id/songBack" 
+        	android:text="Back" 
+        	android:layout_width="96px">
+        </Button>
+        
+        <Button 
+        	android:layout_height="100px"
+        	android:onClick="songNext"
+        	android:id="@+id/songNext" 
+        	android:text="Next" 
+        	android:layout_width="96px">
+        </Button>
+        
+        <Button 
+        	android:layout_height="100px" 
+        	android:onClick="startAudio" 
+        	android:id="@+id/songPlay" 
+        	android:text="Play" 
+        	android:layout_width="96px">
+        </Button>
+        
+        <Button 
+        	android:layout_height="100px" 
+        	android:onClick="stopAudio" 
+        	android:id="@+id/songStop" 
+        	android:text="Stop" 
+        	android:layout_width="96px">
+        </Button>
+        
+        <Button 
+        	android:layout_height="100px" 
+        	android:onClick="pauseAudio" 
+        	android:id="@+id/songPause" 
+        	android:text="Menu" 
+        	android:layout_width="96px">
+        </Button>
+       
+    </LinearLayout>
+    
+</LinearLayout>

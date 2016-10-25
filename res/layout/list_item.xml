@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" 
+  android:weightSum="1">
+    <RelativeLayout 
+    android:id="@+id/relativeLayout1" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_weight="0.06">
+    
+        <ImageView 
+        android:layout_alignParentRight="true" 
+        android:layout_alignParentTop="true" 
+        android:src="@drawable/icon" 
+        android:id="@+id/imageView1" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content">
+        </ImageView>
+        
+        <TextView 
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/album" 
+        android:layout_alignBottom="@+id/imageView1" 
+        android:layout_toLeftOf="@+id/imageView1">
+        </TextView>
+        
+        <TextView 
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:text="Title" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/title" 
+        android:layout_alignParentTop="true" 
+        android:layout_alignParentLeft="true">
+        </TextView>
+        
+        <TextView 
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+        android:text="Artist" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/artist" 
+        android:layout_alignBaseline="@+id/album" 
+        android:layout_alignBottom="@+id/album" 
+        android:layout_alignParentLeft="true">
+        </TextView>
+        
+    </RelativeLayout>
+    
+</LinearLayout>
